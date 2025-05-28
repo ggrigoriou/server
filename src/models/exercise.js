@@ -31,8 +31,12 @@ const ExerciseSchema = new Schema({
   },
   mediaType:   { 
     type: String, 
-    enum:['text','image','video','infographic'], 
+    enum:['text','image','video'], 
     default:'text' 
+  },
+  mediaUrl:   { 
+    type: String, 
+    trim: true 
   },
   createdAt: {
     type: Date,

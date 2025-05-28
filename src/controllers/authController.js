@@ -6,8 +6,6 @@ async function login(req, res) {
       username
     } = req.body;
 
-    console.log(username);
-
     if (!username) {
       return res.status(400).json({
         error: 'Username is required'
@@ -17,8 +15,6 @@ async function login(req, res) {
     let user = await User.findOne({
       username
     });
-
-    console.log(user);
 
     if (!user) {
       try {

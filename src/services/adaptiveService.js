@@ -21,7 +21,6 @@ function shuffleArray(arr) {
 }
 
 async function selectAdaptiveQuestions({ userId, unitId, numQuestions = 10 }) {
-    // 1) Load learner profile & performance
     const profile = await UserProfile.findOne({ user: new ObjectId(userId) }).lean();
     const masteryPct = await computeMastery(userId, unitId);
 
@@ -37,17 +36,14 @@ async function selectAdaptiveQuestions({ userId, unitId, numQuestions = 10 }) {
         correct: true
     });
 
-    // 2) Exclude mastered if mastery ≥ 80%
     const excludeMastered = masteryPct >= 80 ? correctIds : [];
 
-    // 3) Reinforce wrongs (max 30% of total)
     const reinforceCount = Math.min(
         wrongIds.length,
         Math.ceil(numQuestions * 0.3)
     );
     const reinforceIds = wrongIds.slice(0, reinforceCount);
 
-    // 4) Calculate desired difficulty mix
     let proportions;
     if (masteryPct < 50) {
         proportions = { easy: 0.6, medium: 0.3, hard: 0.1 };
@@ -61,7 +57,6 @@ async function selectAdaptiveQuestions({ userId, unitId, numQuestions = 10 }) {
     const mediumCount = Math.floor(freshCount * proportions.medium);
     const hardCount = freshCount - easyCount - mediumCount;
 
-    // 5) Sample fresh questions by difficulty
     const baseMatch = {
         unit: new ObjectId(unitId),
         _id: {
@@ -95,13 +90,11 @@ async function selectAdaptiveQuestions({ userId, unitId, numQuestions = 10 }) {
 
     const freshPool = [...easyPool, ...mediumPool, ...hardPool];
 
-    // 6) Combine reinforce + fresh pools
     let allIds = [
         ...reinforceIds,
         ...freshPool.map(e => e._id)
     ].map(id => new ObjectId(id));
 
-    // 7) Backfill with mastered questions if too few
     if (allIds.length < numQuestions) {
         const needed = numQuestions - allIds.length;
         const masteredToAdd = shuffleArray(
@@ -110,20 +103,16 @@ async function selectAdaptiveQuestions({ userId, unitId, numQuestions = 10 }) {
         allIds = allIds.concat(masteredToAdd);
     }
 
-    // 8) Shuffle final IDs
     allIds = shuffleArray(allIds);
 
-    // 9) Fetch full exercise docs
     const docs = await Exercise.find({
         _id: { $in: allIds }
     }).lean();
 
-    // 10) Reorder docs to match shuffled allIds
     let questions = allIds.map(id =>
         docs.find(d => d._id.toString() === id.toString())
     );
 
-    // 11) Enforce visual-learner media preference
     if (profile?.visualLearner) {
         const desiredMedia = Math.ceil(numQuestions * 0.2);
         const haveMedia = questions.filter(q => q.mediaType !== 'text').length;
