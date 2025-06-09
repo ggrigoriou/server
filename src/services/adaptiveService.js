@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Exercise = require('../models/exercise');
 const AnswerRecord = require('../models/answerRecord');
-const UserProfile = require('../models/user');
+const User = require('../models/user');
 
 const ObjectId = mongoose.Types.ObjectId;
 
@@ -21,7 +21,7 @@ function shuffleArray(arr) {
 }
 
 async function selectAdaptiveQuestions({ userId, unitId, numQuestions = 10 }) {
-    const profile = await UserProfile.findOne({ user: new ObjectId(userId) }).lean();
+    const profile = await User.findOne({ user: new ObjectId(userId) }).lean();
     const masteryPct = await computeMastery(userId, unitId);
 
     const wrongIds = await AnswerRecord.distinct('exercise', {
@@ -95,11 +95,18 @@ async function selectAdaptiveQuestions({ userId, unitId, numQuestions = 10 }) {
         ...freshPool.map(e => e._id)
     ].map(id => new ObjectId(id));
 
+    const already = new Set(allIds.map(id => id.toString()));
+
     if (allIds.length < numQuestions) {
         const needed = numQuestions - allIds.length;
-        const masteredToAdd = shuffleArray(
-            correctIds.map(id => new ObjectId(id))
-        ).slice(0, needed);
+
+        const masteredCandidates = correctIds
+        .map(id => new ObjectId(id))
+        .filter(id => !already.has(id.toString()));
+
+        const masteredToAdd = shuffleArray(masteredCandidates)
+        .slice(0, needed);
+        
         allIds = allIds.concat(masteredToAdd);
     }
 

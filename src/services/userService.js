@@ -1,11 +1,10 @@
 const User = require('../models/user');
-const UserProfile = require('../models/user');
 
 async function createUser(userData) {
   const newUser = new User(userData);
   await newUser.save();
 
-  await UserProfile.create({
+  await User.create({
     user: newUser._id,
     visualLearner: false,
     challengedModules: [],
@@ -32,7 +31,7 @@ async function updateUser(userId, updateData) {
   if (!updatedUser) throw new Error('User not found for update');
 
   if (typeof visualLearner === 'boolean') {
-    await UserProfile.findOneAndUpdate(
+    await User.findOneAndUpdate(
       { user: updatedUser._id },
       { visualLearner },
       { upsert: true }

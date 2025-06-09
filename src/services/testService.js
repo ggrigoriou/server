@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Exercise = require('../models/exercise');
 const AnswerRecord = require('../models/answerRecord');
-const UserProfile = require('../models/user');
+const User = require('../models/user');
 
 const ObjectId = mongoose.Types.ObjectId;
 
@@ -11,7 +11,7 @@ async function recordAnswer({ userId, unitId, exerciseId, answer }) {
 
   const correct = ex.correctAnswer === answer;
 
-  const record = await AnswerRecord.create({
+  await AnswerRecord.create({
     user: new ObjectId(userId),
     unit: new ObjectId(unitId),
     exercise: new ObjectId(exerciseId),
@@ -26,10 +26,10 @@ async function recordAnswer({ userId, unitId, exerciseId, answer }) {
   });
 
   if (!correct && wrongCount >= 3) {
-    await UserProfile.findOneAndUpdate(
-      { user: new ObjectId(userId) },
+    await User.findByIdAndUpdate(
+      userId,
       { $addToSet: { challengedModules: ex.topic } },
-      { upsert: true }
+      { new: true }
     );
   }
 
@@ -53,13 +53,7 @@ async function startRepeatTest(userId) {
   const reinforce = wrongDocs.slice(0, 5);
   const freshCount = 15 - reinforce.length;
   const freshPool = await Exercise.aggregate([
-    {
-      $match: {
-        _id: {
-          $nin: reinforce.map(id => new ObjectId(id))
-        }
-      }
-    },
+    { $match: { _id: { $nin: reinforce.map(id => new ObjectId(id)) } } },
     { $sample: { size: freshCount } }
   ]);
 
