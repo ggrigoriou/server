@@ -5,6 +5,8 @@ const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
+const seedOnce = require('./src/scripts/seed');
+
 const {
   hostname,
   port
@@ -27,7 +29,16 @@ app
     cors()
   );
 
-connectDB();
+
+async function start() {
+  await connectDB();
+  await seedOnce();   
+}
+
+start().catch(err => {
+  console.error(err);
+  process.exit(1);
+});
 
 app
   .use(

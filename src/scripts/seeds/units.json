@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "unitName": "Εισαγωγή στη JavaScript",
+  "description": "Βασικά στοιχεία, syntax και δομές ελέγχου στην JS",
+  "content": "<h2>Τι είναι η JavaScript;</h2>\n<p>\n  Η <strong>JavaScript</strong> είναι μια ερμηνευόμενη γλώσσα προγραμματισμού που επιτρέπει την αλληλεπίδραση και δυναμικότητα στις ιστοσελίδες.\n  Χρησιμοποιείται για να αλλάζει το περιεχόμενο HTML, να χειρίζεται συμβάντα και να επικοινωνεί με διακομιστές.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/W6NZfCO5SIk\" title=\"What is JavaScript?\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Ενσωμάτωση σε HTML</h2>\n<p>\n  Η JavaScript εισάγεται μέσα σε HTML με το tag <code>&lt;script&gt;</code>, είτε στο <code>&lt;head&gt;</code> είτε στο <code>&lt;body&gt;</code>.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/hQVTIJBZook\" title=\"Using Script Tag\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Σχόλια</h2>\n<p>\n  Μονής γραμμής: <code>// σχόλιο</code><br />\n  Πολλαπλών γραμμών: <code>/* σχόλιο */</code>\n</p>\n\n<h2>Μεταβλητές και Σταθερές</h2>\n<p>\n  Δηλώνονται με <code>let</code>, <code>const</code>, και <code>var</code>. Το <code>let</code> είναι block-scoped, ενώ το <code>const</code> ορίζει σταθερές.\n</p>\n\n<h2>Συναρτήσεις</h2>\n<p>\n  Δημιουργία συναρτήσεων με δύο τρόπους:\n  <code>function greet() { ... }</code> και <code>const f = () => { ... }</code>\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/NCwa_xi0Uuc\" title=\"JavaScript Functions\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Alert & Console</h2>\n<p>\n  <code>alert('Hello')</code> εμφανίζει μήνυμα στον χρήστη, <code>console.log()</code> καταγράφει στην κονσόλα.\n</p>\n\n<h2>Εντολή IF και Σύγκριση</h2>\n<p>\n  Σύνταξη: <code>if (condition) { ... }</code><br />\n  <code>==</code> συγκρίνει μόνο τιμή, <code>===</code> τιμή και τύπο.\n</p>\n\n<h2>Αντικείμενα</h2>\n<p>\n  Ορίζονται ως <code>var obj = { key: 'value' }</code>. Οι ιδιότητες προσπελαύνονται με <code>obj.key</code>.\n</p>\n",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "unitName": "Βασικές Έννοιες της JavaScript",
+  "description": "Δομές δεδομένων, loops, array methods & hoisting",
+  "content": "<h2>Τύποι Δεδομένων</h2>\n<p>\n  Πρωτεύοντες τύποι: <code>string</code>, <code>number</code>, <code>boolean</code>, <code>null</code>, <code>undefined</code> και <code>object</code>.\n</p>\n\n<h2>Πίνακες</h2>\n<p>\n  Πίνακες είναι ειδικά αντικείμενα για την αποθήκευση ακολουθιών. Μέθοδοι: <code>push</code>, <code>pop</code>, <code>map</code>, <code>filter</code>.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/R8rmfD9Y5-c\" title=\"JavaScript Arrays\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Loops</h2>\n<p>\n  Επανάληψη με <code>for</code>, <code>while</code>, <code>do...while</code>. Η τελευταία εκτελείται τουλάχιστον μία φορά.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/s9wW2PpJsmQ\" title=\"JavaScript Loops\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Control Flow</h2>\n<p>\n  <code>break</code> διακόπτει την επανάληψη, ενώ <code>continue</code> μεταβαίνει στην επόμενη.\n</p>\n\n<h2>Γράψιμο Λειτουργικών Συναρτήσεων</h2>\n<p>\n  Χρήση arrow functions και μεθόδων όπως <code>map</code> και <code>filter</code> για καθαρό κώδικα.\n</p>\n\n<h2>Hoisting & Scope</h2>\n<p>\n  <strong>Hoisting</strong>: Μεταβλητές και συναρτήσεις μεταφέρονται στην κορυφή του scope.\n  <br />\n  <code>var</code> είναι function-scoped, <code>let/const</code> block-scoped.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/Fnlnw8uY6jo\" title=\"JavaScript Hoisting\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Τύποι & Μετατροπές</h2>\n<p>\n  Παράδειγμα: <code>1 + '2'</code> → <code>'12'</code> (concatenation).<br />\n  <code>Boolean('false')</code> → <code>true</code> (μη-κενή συμβολοσειρά).\n</p>\n",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "unitName": "Προχωρημένες Τεχνικές JavaScript",
+  "description": "Closures, prototypes, promises, async/await & event loop",
+  "content": "<h2>Closures</h2>\n<p>\n  Ένα <strong>closure</strong> είναι μια συνάρτηση που \"θυμάται\" το lexical scope όπου δημιουργήθηκε, ακόμα και μετά την έξοδό της από αυτό. \n  Είναι θεμελιώδες για δημιουργία private μεταβλητών και callback functions.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/1JsJx1x35c0\" title=\"JavaScript Closures\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Prototype Chain</h2>\n<p>\n  Η JavaScript χρησιμοποιεί <strong>prototype-based inheritance</strong>. Κάθε αντικείμενο μπορεί να κληρονομήσει ιδιότητες και μεθόδους μέσω της <code>__proto__</code> αλυσίδας.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/uH-tVP8MUs8\" title=\"Prototypes in JavaScript\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Promises</h2>\n<p>\n  Τα <strong>Promises</strong> επιτρέπουν τον χειρισμό ασύγχρονου κώδικα με τρόπο που αποφεύγει το \"callback hell\". Μεθόδοι όπως <code>then</code>, <code>catch</code>, και <code>finally</code> είναι βασικά εργαλεία.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/DHvZLI7Db8E\" title=\"JavaScript Promises\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Async/Await</h2>\n<p>\n  Οι <strong>async/await</strong> λειτουργίες είναι syntactic sugar πάνω από τα promises, και βοηθούν να γραφτεί πιο καθαρός και σειριακός ασύγχρονος κώδικας.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/V_Kr9OSfDeU\" title=\"Async/Await Explained\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Modules</h2>\n<p>\n  Τα <strong>ES6 modules</strong> επιτρέπουν τη διάσπαση του κώδικα σε αρχεία. <code>import</code> και <code>export</code> χρησιμοποιούνται για ανταλλαγή δεδομένων.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/3A0go-6WR0I\" title=\"JavaScript Modules\" frameborder=\"0\" allowfullscreen></iframe>\n\n<h2>Event Loop</h2>\n<p>\n  Ο <strong>Event Loop</strong> είναι υπεύθυνος για τον χειρισμό των callbacks και τη σειρά εκτέλεσης των asynchronous tasks στη JavaScript.\n</p>\n<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/8aGhZQkoFbQ\" title=\"JavaScript Event Loop\" frameborder=\"0\" allowfullscreen></iframe>\n",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  }
+}]

@@ -1,45 +1,40 @@
-const mongoose = require('mongoose');
 const fs = require('fs/promises');
 const path = require('path');
+const mongoose = require('mongoose');
+const SeedMarker = require('../models/seedMarker');
 
-const User = require('../models/user');
-const Unit = require('../models/unit');
-const Exercise = require('../models/exercise');
-const AnswerRecord = require('../models/answerRecord');
-
-async function loadJson(name) {
-    const file = path.join(__dirname, 'seeds', `${name}.json`);
-    const text = await fs.readFile(file, 'utf8');
-    return JSON.parse(text);
+function reviver(key, val) {
+  if (val && val.$oid) return new mongoose.Types.ObjectId(val.$oid);
+  if (val && val.$date) return new Date(val.$date);
+  return val;
 }
 
-async function seed() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/education-app');
+async function seedOnce() {
+  if (await SeedMarker.findOne({ key: 'initial-load' })) {
+    console.log('⏭ already seeded');
+    return;
+  }
 
-    const [users, units, exercises, answers] = await Promise.all([
-        loadJson('units'),
-        loadJson('exercises')
-    ]);
+  const seedsDir = path.join(__dirname, 'seeds');
+  const files = await fs.readdir(seedsDir);
 
-    await Promise.all([
-        User.deleteMany({}),
-        Unit.deleteMany({}),
-        Exercise.deleteMany({}),
-        AnswerRecord.deleteMany({})
-    ]);
+  for (const file of files) {
+    if (!file.endsWith('.json')) continue;
+    const raw = await fs.readFile(path.join(seedsDir, file), 'utf8');
+    const docs = JSON.parse(raw, reviver);
 
-    await Promise.all([
-        User.insertMany(users),
-        Unit.insertMany(units),
-        Exercise.insertMany(exercises),
-        AnswerRecord.insertMany(answers)
-    ]);
+    const base = path.basename(file, '.json');
+    const modelName = base.endsWith('s') ? base.slice(0, -1) : base;
+    const Model = require(`../models/${modelName}`);
 
-    console.log('Database seeded!');
-    await mongoose.disconnect();
+    if (Array.isArray(docs) && docs.length) {
+      await Model.insertMany(docs);
+      console.log(`✔ seeded ${modelName}`);
+    }
+  }
+
+  await SeedMarker.create({ key: 'initial-load' });
+  console.log('✔ seed marker created');
 }
 
-seed().catch(err => {
-    console.error(err);
-    process.exit(1);
-});
+module.exports = seedOnce;

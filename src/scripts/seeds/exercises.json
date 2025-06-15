@@ -1,0 +1,1234 @@
+[{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0e7"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι είναι closure στη JavaScript;",
+  "correctAnswer": "Χαρακτηριστικό αλυσίδας scope",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Συνάρτηση μέσα σε άλλη",
+    "Χαρακτηριστικό αλυσίδας scope",
+    "Loop",
+    "Promise"
+  ],
+  "topic": "JavaScript closures",
+  "mediaType": "image",
+  "mediaUrl": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*wRIPC0QtRntsyes_njpMAQ.png"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0e8"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Arrow function για τετράγωνο x;",
+  "correctAnswer": "x => x * x",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Arrow functions",
+  "mediaType": "image",
+  "mediaUrl": "https://www.codesmith.io/hs-fs/hubfs/image%20(2).png?width=1461&height=813&name=image%20(2).png"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0e9"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποια μέθοδος διαχειρίζεται resolved promise;",
+  "correctAnswer": "then",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "async",
+    "await",
+    "then",
+    "catch"
+  ],
+  "topic": "Promises",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0ea"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Πώς περιμένετε promise p;",
+  "correctAnswer": "await p",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Promises",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0eb"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι κάνει το Promise.all;",
+  "correctAnswer": "Επιλύει όλα τα promises",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Επιλύει όλα τα promises",
+    "Επιλύει πρώτο promise",
+    "Απορρίπτει όλα",
+    "Κανένα"
+  ],
+  "topic": "Promises",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0ec"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Εισαγωγή default export από 'mod';",
+  "correctAnswer": "import x from 'mod'",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Modules (ES6)",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0ed"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Εξαγωγή function f σε ES6;",
+  "correctAnswer": "export function f() {}",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Functions",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0ee"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι είναι prototype chain;",
+  "correctAnswer": "Μηχανισμός κληρονομικότητας",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Μηχανισμός κληρονομικότητας",
+    "Τύπος loop",
+    "Μέθοδος πίνακα",
+    "Τύπος σφάλματος"
+  ],
+  "topic": "Prototype chain",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0ef"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Promise που επιλύεται με 5;",
+  "correctAnswer": "new Promise(resolve => resolve(5))",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Promises",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f0"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποια συνάρτηση εκτελεί callback μετά το τρέχον phase;",
+  "correctAnswer": "setImmediate",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "setTimeout",
+    "Promise",
+    "setImmediate",
+    "nextTick"
+  ],
+  "topic": "Callbacks",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f1"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Destructure a,b από obj;",
+  "correctAnswer": "const { a, b } = obj",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Destructuring",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f2"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Συγχώνευση obj1, obj2;",
+  "correctAnswer": "{ ...obj1, ...obj2 }",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "video",
+  "mediaUrl": "https://www.youtube.com/embed/zNF3G3pn2CE?si=rygFVukR3GY2cWvW"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f3"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι είναι 'this' σε arrow functions;",
+  "correctAnswer": "Λεξικό context",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Ιδιόκτητο context",
+    "Λεξικό context",
+    "Undefined",
+    "Global object"
+  ],
+  "topic": "Arrow functions",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f4"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Πώς παγώνετε obj;",
+  "correctAnswer": "Object.freeze(obj)",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f5"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι κάνει το event loop;",
+  "correctAnswer": "Διαχείριση callbacks",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Διαχείριση callbacks",
+    "Εκτέλεση κώδικα",
+    "Διαχείριση μνήμης",
+    "Styling"
+  ],
+  "topic": "Loops",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f6"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "setTimeout(fn, 0);",
+  "correctAnswer": "setTimeout(fn, 0)",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Timers",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f7"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι είναι memoization;",
+  "correctAnswer": "Αποθήκευση αποτελεσμάτων",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Αποθήκευση αποτελεσμάτων",
+    "Τύπος promise",
+    "Event",
+    "Loop"
+  ],
+  "topic": "Memoization",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f8"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Έλεγχος αν obj έχει ιδιότητα 'k';",
+  "correctAnswer": "obj.hasOwnProperty('k')",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0f9"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι είναι tail call optimization;",
+  "correctAnswer": "Βελτιστοποίηση αναδρομικών κλήσεων",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Βελτιστοποίηση αναδρομικών κλήσεων",
+    "Βελτιστοποίηση loops",
+    "Βελτιστοποίηση promises",
+    "Βελτιστοποίηση CSS"
+  ],
+  "topic": "Tail call optimization",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db6dbb14534b0c60a0fa"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89d"
+  },
+  "exerciseType": "short-answer",
+  "question": "Deep clone με JSON;",
+  "correctAnswer": "JSON.parse(JSON.stringify(obj))",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Deep cloning",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a0fb"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποιο είναι το αποτέλεσμα της έκφρασης 1 + '2';",
+  "correctAnswer": "12",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "3",
+    "12",
+    "NaN",
+    "undefined"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a0fc"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι επιστρέφει typeof([]);",
+  "correctAnswer": "object",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "object",
+    "array",
+    "undefined",
+    "number"
+  ],
+  "topic": "Type checking",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a0fd"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποιο loop εκτελείται τουλάχιστον μία φορά ακόμη κι αν η συνθήκη είναι false;",
+  "correctAnswer": "do-while",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "for",
+    "while",
+    "do-while",
+    "forEach"
+  ],
+  "topic": "Loops",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a0fe"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Γράψτε for loop από 0 έως 4.",
+  "correctAnswer": "for (let i = 0; i < 5; i++)",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Loops",
+  "mediaType": "video",
+  "mediaUrl": "https://www.youtube.com/embed/ZOQYIWLngSU?si=1NoerWUol3p7fxlW"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a0ff"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι εμφανίζει console.log(typeof null);",
+  "correctAnswer": "object",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "null",
+    "object",
+    "undefined",
+    "boolean"
+  ],
+  "topic": "Type checking",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a100"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποια λέξη-κλειδί ορίζει block-scoped μεταβλητή;",
+  "correctAnswer": "let",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "var",
+    "let",
+    "const",
+    "static"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a101"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Ποια λέξη-κλειδί σταματά την τρέχουσα επανάληψη;",
+  "correctAnswer": "continue",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a102"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποια μέθοδος επιστρέφει νέο πίνακα με στοιχεία που περνούν ένα τεστ;",
+  "correctAnswer": "filter",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "map",
+    "filter",
+    "reduce",
+    "forEach"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a103"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Πώς καλείτε τη συνάρτηση greet;",
+  "correctAnswer": "greet()",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a104"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι είναι hoisting;",
+  "correctAnswer": "Μεταφορά δηλώσεων στην κορυφή",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Μεταφορά δηλώσεων στην κορυφή",
+    "Αυτόματο τρέξιμο συναρτήσεων",
+    "Διαχείριση σφαλμάτων",
+    "Διαχείριση μνήμης"
+  ],
+  "topic": "Hoisting",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a105"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Πώς προσθέτετε 'a' σε arr;",
+  "correctAnswer": "arr.push('a')",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a106"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Ποια μέθοδος μετασχηματίζει όλα τα στοιχεία;",
+  "correctAnswer": "map",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a107"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι κάνει το ===;",
+  "correctAnswer": "Συγκρίνει τιμή και τύπο",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Συγκρίνει μόνο τιμές",
+    "Συγκρίνει τιμή και τύπο",
+    "Αναθέτει τιμή",
+    "Κανένα"
+  ],
+  "topic": "Strict equality",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a108"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Πώς αφαιρείτε το τελευταίο στοιχείο;",
+  "correctAnswer": "arr.pop()",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a109"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποια λέξη-κλειδί έχει function scope;",
+  "correctAnswer": "var",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "var",
+    "let",
+    "const",
+    "function"
+  ],
+  "topic": "Functions",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a10a"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Δομή ονομασμένη συνάρτηση sum;",
+  "correctAnswer": "function sum() {}",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a10b"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι είναι callback;",
+  "correctAnswer": "Συνάρτηση ως όρισμα",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Συνάρτηση ως όρισμα",
+    "Μεταβλητή",
+    "Σφάλμα",
+    "Loop"
+  ],
+  "topic": "Callbacks",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a10c"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Ποια λέξη-κλειδί αποτρέπει επαναπροσδιορισμό;",
+  "correctAnswer": "const",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a10d"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι εμφανίζει Boolean('false');",
+  "correctAnswer": "true",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "true",
+    "false",
+    "undefined",
+    "0"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db75bb14534b0c60a10e"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89c"
+  },
+  "exerciseType": "short-answer",
+  "question": "Πώς προσπελάζετε obj.name;",
+  "correctAnswer": "obj.name",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a10f"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Τι σημαίνει JS;",
+  "correctAnswer": "JavaScript",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Java Super",
+    "JavaScript",
+    "JustScript",
+    "JadeScript"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "image",
+  "mediaUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a110"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποιο HTML tag χρησιμοποιείται για την ενσωμάτωση JavaScript;",
+  "correctAnswer": "<script>",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "<script>",
+    "<js>",
+    "<code>",
+    "<javascript>"
+  ],
+  "topic": "JavaScript basics",
+  "mediaType": "image",
+  "mediaUrl": "https://www.pierre-giraud.com/wp-content/uploads/2019/05/javascript-code-balise-ouvrante-html.png"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a111"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Πού είναι το σωστό μέρος για να εισάγετε ένα script JavaScript;",
+  "correctAnswer": "Και στα δύο",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Στο head",
+    "Στο body",
+    "Και στα δύο",
+    "Στην sidebar"
+  ],
+  "topic": "JavaScript basics",
+  "mediaType": "image",
+  "mediaUrl": "https://www.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/html%20script%20tag_32023-4.png?width=500&height=138&name=html%20script%20tag_32023-4.png"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a112"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Πώς γράφετε 'Hello World' σε ένα alert box;",
+  "correctAnswer": "alert('Hello World')",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "alertBox('Hello World')",
+    "msg('Hello World')",
+    "alert('Hello World')",
+    "msgBox('Hello World')"
+  ],
+  "topic": "Dialogs",
+  "mediaType": "image",
+  "mediaUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert/alerthelloworld.png"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a113"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Πώς δημιουργείτε μια συνάρτηση σε JavaScript;",
+  "correctAnswer": "function myFunction()",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "function = myFunction()",
+    "function myFunction()",
+    "create function myFunction()",
+    "def myFunction()"
+  ],
+  "topic": "JavaScript basics",
+  "mediaType": "image",
+  "mediaUrl": "https://blog.alexdevero.com/wp-content/uploads/2020/01/javascript-functions-all-you-need-to-know-pt.1.jpg"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a114"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Πώς γράφετε μια δήλωση IF σε JavaScript;",
+  "correctAnswer": "if (i == 5)",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "if i == 5 then",
+    "if (i == 5)",
+    "if i = 5 then",
+    "if i = 5"
+  ],
+  "topic": "JavaScript basics",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a115"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Πώς δηλώνετε μια μεταβλητή σε JavaScript;",
+  "correctAnswer": "let x;",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "let x;",
+    "variable x;",
+    "v x;",
+    "int x;"
+  ],
+  "topic": "JavaScript basics",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a116"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Πώς προσθέτετε σχόλιο σε JavaScript;",
+  "correctAnswer": "// σχόλιο",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "<!-- σχόλιο -->",
+    "// σχόλιο",
+    "/* σχόλιο */",
+    "Και τα δύο // και /* */"
+  ],
+  "topic": "JavaScript basics",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a117"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "short-answer",
+  "question": "Γράψτε τη σύνταξη για τη δήλωση μιας σταθεράς PI.",
+  "correctAnswer": "const PI",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a118"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "short-answer",
+  "question": "Γράψτε κώδικα για να εμφανίσετε 'Test' στην κονσόλα.",
+  "correctAnswer": "console.log('Test')",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a119"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποια εταιρεία ανέπτυξε τη JavaScript;",
+  "correctAnswer": "Netscape",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "Netscape",
+    "Microsoft",
+    "Sun Microsystems",
+    "Oracle"
+  ],
+  "topic": "JavaScript basics",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a11a"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Σε ποιο element βάζουμε τον κώδικα JavaScript;",
+  "correctAnswer": "<script>",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "<js>",
+    "<javascript>",
+    "<script>",
+    "<code>"
+  ],
+  "topic": "JavaScript basics",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a11b"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Πώς στρογγυλοποιούμε το 7.25;",
+  "correctAnswer": "Math.round(7.25)",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "round(7.25)",
+    "Math.round(7.25)",
+    "Math.rnd(7.25)",
+    "rnd(7.25)"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a11c"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "short-answer",
+  "question": "Ποια λέξη-κλειδί δηλώνει μεταβλητή που επαναπροσδιορίζεται;",
+  "correctAnswer": "let",
+  "difficulty": "easy",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "video",
+  "mediaUrl": "https://www.youtube.com/embed/ygdFzuCaZJM?si=y11xZRxGoum9qXnJ"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a11d"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "short-answer",
+  "question": "Ποια λέξη-κλειδί έχει function scope;",
+  "correctAnswer": "var",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Functions",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a11e"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποια μέθοδος προσθέτει στοιχείο στο τέλος ενός πίνακα;",
+  "correctAnswer": "push()",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "push()",
+    "pop()",
+    "shift()",
+    "unshift()"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a11f"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Ποια μέθοδος αφαιρεί το τελευταίο στοιχείο από πίνακα;",
+  "correctAnswer": "pop()",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "pop()",
+    "push()",
+    "shift()",
+    "unshift()"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a120"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "short-answer",
+  "question": "Πώς βρίσκετε το μήκος του arr;",
+  "correctAnswer": "arr.length",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "General JavaScript",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a121"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "short-answer",
+  "question": "Έκφραση για x === y;",
+  "correctAnswer": "x === y",
+  "difficulty": "medium",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "topic": "Strict equality",
+  "mediaType": "text"
+},
+{
+  "_id": {
+    "$oid": "6811db7bbb14534b0c60a122"
+  },
+  "unit": {
+    "$oid": "67feb3c9a6f1a69abcb5f89b"
+  },
+  "exerciseType": "multiple-choice",
+  "question": "Πώς γράφεται literal αντικειμένου;",
+  "correctAnswer": "var obj = {}",
+  "difficulty": "hard",
+  "createdAt": {
+    "$date": "2025-04-30T12:00:00.000Z"
+  },
+  "options": [
+    "var obj = {}",
+    "var obj = []",
+    "var obj = ()",
+    "var obj = <>"
+  ],
+  "topic": "General JavaScript",
+  "mediaType": "text"
+}]
